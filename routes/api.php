@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PosnetController;
+use App\Http\Controllers\EsPrimoController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -18,3 +20,5 @@ use App\Http\Controllers\PosnetController;
 
 Route::post('/register-card', [PosnetController::class, 'registerCard']);
 Route::post('/do-payment', [PosnetController::class, 'doPayment']);
+
+Route::get('/es-primo', [EsPrimoController::class, 'esPrimo']);
